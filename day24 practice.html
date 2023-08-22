@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Activity 24</title>
+</head>
+<style>
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+header {
+  background-color: #f18818;
+  color: #1a1a1a;
+  text-align: center;
+  padding: 20px 0;
+}
+
+header h1 {
+  margin: 0;
+}
+
+.order-tracking {
+  border: 1px solid #ddd;
+  margin: 20px;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.order-tracking h2 {
+  margin-top: 0;
+}
+
+.order-tracking p {
+  color: #666;
+}
+
+#order-form label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+#order-form input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+#order-form button {
+  padding: 10px 20px;
+  background-color: #f18818;;
+  color: #282828;
+  border: none;
+  border-radius: 4px;
+  margin: 14px;
+  cursor: pointer;
+}
+
+#order-form button:hover {
+  background-color: #f9a750;
+}
+
+#order-status {
+  margin-top: 20px;
+  border-top: 1px solid #ddd;
+  padding-top: 10px;
+}
+
+</style>
+<body>
+  <header>
+    <h1>Order Tracking</h1>
+  </header>
+
+  <section class="order-tracking">
+    <h2>Track Your Order</h2>
+    <p>Enter your order ID to get real-time updates on your delivery status.</p>
+    <form id="order-form">
+      <label for="order-id">Order ID:</label>
+      <input type="text" id="order-id" name="order-id" required>
+      <button type="submit">Track</button>
+    </form>
+    <div class="order-status" id="order-status">
+      <!-- Order status updates will be displayed here -->
+    </div>
+  </section>
+
+
+  
+</body>
+</html>
